@@ -1,0 +1,16 @@
+server:
+  port: 8890
+
+spring:
+  application:
+    name: eureka-rabbitmq
+  #rabbitmq信息
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: springcloud
+    password: springcloud
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8888/eureka/
