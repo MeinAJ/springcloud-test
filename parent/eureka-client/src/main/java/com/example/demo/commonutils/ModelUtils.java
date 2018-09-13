@@ -1,7 +1,6 @@
 package com.example.demo.commonutils;
 
 import com.alibaba.fastjson.JSONObject;
-
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;

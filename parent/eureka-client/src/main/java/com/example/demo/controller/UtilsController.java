@@ -12,17 +12,17 @@ import javax.websocket.server.PathParam;
 @SuppressWarnings(value = "static-access")
 @RestController
 @RequestMapping(value = "/utils")
-public class UtilsController extends BaseController{
+public class UtilsController extends BaseController {
 
     @Resource(name = "utilsService")
     private UtilsService utilsService;
 
     @RequestMapping(value = "/auto/model", headers = "Accept=*/*", method = RequestMethod.GET, produces = "application/json;charset=UTF-8")
     public String getModel(HttpServletRequest request,
-                        @PathParam(value = "column") String column){
+                           @PathParam(value = "column") String column) {
         try {
 
-        } catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return json.toJSONString(column);
@@ -30,10 +30,10 @@ public class UtilsController extends BaseController{
 
     @RequestMapping(value = "/auto/model", headers = "Accept=*/*", method = RequestMethod.GET, produces = "application/json;charset=UTF-8")
     public String getSql(HttpServletRequest request,
-                        @PathParam(value = "column") String column){
+                         @PathParam(value = "column") String column) {
         try {
 
-        } catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return json.toJSONString(column);
