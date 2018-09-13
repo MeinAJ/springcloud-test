@@ -6,10 +6,10 @@ spring:
     name: eureka-rabbitmq
   #rabbitmq信息
   rabbitmq:
-    host: localhost
+    host: 39.108.134.71
     port: 5672
-    username: springcloud
-    password: springcloud
+    username: 15102356906
+    password: 016312Aj.713
 eureka:
   client:
     serviceUrl:

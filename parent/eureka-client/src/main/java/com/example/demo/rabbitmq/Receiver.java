@@ -1,4 +1,4 @@
-package com.aj.rabbitmq;
+package com.example.demo.rabbitmq;
 
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
@@ -15,6 +15,6 @@ public class Receiver {
 
     @RabbitHandler
     public void process(String hello){
-        System.out.println("receiver:"+hello);
+        System.out.println("receiver="+hello);
     }
 }

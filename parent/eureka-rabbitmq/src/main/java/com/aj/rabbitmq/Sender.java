@@ -19,7 +19,7 @@ public class Sender {
 
     public String send(String name){
 
-        String context  = "hello "+name+" ,now the time is"+new Date();
+        String context  = "hello"+name+" ,now the time is"+new Date();
         this.rabbitTemplate.convertAndSend("hello",context);
         return context;
     }

@@ -4,6 +4,12 @@ server:
 spring:
   application:
     name: eureka-client
+    #rabbitmq信息
+  rabbitmq:
+    host: 39.108.134.71
+    port: 5672
+    username: 15102356906
+    password: 016312Aj.713
 
 eureka:
   client:
