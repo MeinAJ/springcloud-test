@@ -16,5 +16,7 @@ public class Receiver {
     @RabbitHandler
     public void process(String hello){
         System.out.println("receiver="+hello);
+
+        new Object();
     }
 }
