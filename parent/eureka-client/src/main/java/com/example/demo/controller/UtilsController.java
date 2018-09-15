@@ -28,15 +28,4 @@ public class UtilsController extends BaseController {
         return json.toJSONString(column);
     }
 
-    @RequestMapping(value = "/auto/model", headers = "Accept=*/*", method = RequestMethod.GET, produces = "application/json;charset=UTF-8")
-    public String getSql(HttpServletRequest request,
-                         @PathParam(value = "column") String column) {
-        try {
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return json.toJSONString(column);
-    }
-
 }
